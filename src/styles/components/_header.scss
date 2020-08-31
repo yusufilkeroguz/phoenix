@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid $THEME_GRAY_COLOR;
+
+  &__logo {
+    padding: 1.5rem .75rem;
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  &__user {
+    $parent: &;
+    text-align: right;
+    padding: 1rem 0;
+    min-width: 150px;
+    line-height: 3;
+
+    @media screen and (max-width: 1200px) {
+      min-width: 100px;
+    }
+
+    &:hover {
+      #{$parent}-options {
+        display: flex;
+      }
+    }
+
+    &:active {
+      #{$parent}-options {
+        display: flex;
+      }
+    }
+
+    &-options {
+      display: none;
+      position: absolute;
+      right: .5rem;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 14px;
+      margin-top: 1rem;
+      border: 1px solid $THEME_GRAY_COLOR;
+      border-radius: .5rem;
+      background-color: $THEME_GRAY_COLOR;
+
+      #{$parent}-option {
+        text-align: center;
+        flex: 0 0 100%;
+        padding: 1rem 0;
+        line-height: 1;
+        color: $THEME_WHITE_COLOR;
+
+        &--sign-out {
+          padding-bottom: 1.5rem;
+          a {
+            text-decoration: none;
+            color: $THEME_WHITE_COLOR;
+          }
+        }
+      }
+    }
+  }
+}

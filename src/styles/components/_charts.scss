@@ -1,0 +1,11 @@
+.charts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  @import "chart";
+}

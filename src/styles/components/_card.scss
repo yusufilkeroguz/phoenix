@@ -1,0 +1,37 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  padding: 1rem .75rem;
+  border: 1px solid $THEME_DEFAULT_COLOR;
+  box-sizing: border-box;
+  margin: 1rem 0 1rem 1rem;
+  min-width: 300px;
+  border-radius: .5rem;
+  background-color: $THEME_DEFAULT_COLOR;
+
+  &__icon {
+    line-height: 1;
+    font-size: 24px;
+    box-sizing: border-box;
+    color: $THEME_WHITE_COLOR;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 1;
+    box-sizing: border-box;
+    color: $THEME_WHITE_COLOR;
+    font-weight: bold;
+  }
+
+  &__data {
+    font-size: 24px;
+    line-height: 1;
+    box-sizing: border-box;
+    color: $THEME_WHITE_COLOR;
+    font-weight: 400;
+    text-align: right;
+  }
+}

@@ -1,0 +1,17 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  margin-top: 2rem;
+
+  @media screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  @import "card";
+}

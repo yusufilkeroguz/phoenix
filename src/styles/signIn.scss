@@ -1,0 +1,57 @@
+@import "variables";
+@import "reset";
+@import "mixins";
+
+.sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: $THEME_DEFAULT_COLOR;
+
+  &-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 250px;
+    background-color: $THEME_WHITE_COLOR;
+    padding: 2rem;
+    border-radius: 1rem;
+
+    &__logo {
+      flex: 0 0 100%;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    &__input {
+      flex: 0 0 100%;
+      text-align: center;
+      padding: .5rem 1rem;
+      box-sizing: border-box;
+      margin-bottom: .5rem;
+      border: 1px solid #141414;
+      border-radius: 4px;
+    }
+
+    &__submit {
+      margin-top: .75rem;
+      position: relative;
+      padding: .5rem 1rem;
+      width: 100%;
+      background: #fff;
+      appearance: none;
+      border: 1px solid $THEME_DEFAULT_COLOR;
+      border-radius: 4px;
+      color: $THEME_DEFAULT_COLOR;
+
+      &:disabled {
+        border-color: lighten($THEME_DEFAULT_COLOR, 40);
+        color: lighten($THEME_DEFAULT_COLOR, 40);
+      }
+    }
+  }
+
+}
