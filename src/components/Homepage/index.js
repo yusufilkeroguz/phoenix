@@ -9,7 +9,11 @@ import Chart from "../Chart";
 
 import "../../styles/homepage.scss";
 
-const HomePage = () => {
+const HomePage = (props) => {
+  props.firebase.database.ref("rt").on("value", (val) => {
+    console.log(val)
+  });
+
   return (
     <Fragment>
       <Header />
